@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
-import type { NextPage } from 'next';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -17,7 +16,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import Link from './Link';
 
 const drawerWidth = 360;
@@ -71,6 +69,13 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-end',
 }));
 
+const appBarList = [
+  { link: '/', text: 'Home Page', icon: <InboxIcon /> },
+  { link: '/organisation', text: 'Badminton Organisation', icon: <InboxIcon /> },
+  { link: '/teams', text: 'Badminton Teams', icon: <InboxIcon /> },
+  { link: '/info', text: 'Information', icon: <InboxIcon /> }
+]
+
 export default function AppBarLeft(props: { children: any; }) {
   const { children } = props;
   const theme = useTheme();
@@ -123,23 +128,12 @@ export default function AppBarLeft(props: { children: any; }) {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Badminton Organistaion', 'Badminton Teams'].map((text) => (
-            <ListItem button key={text}>
+          {appBarList.map((listItem) => (
+            <ListItem button key={listItem.text} component={Link} href={listItem.link}>
               <ListItemIcon>
-                <InboxIcon />
+                {listItem.icon}
               </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['Badminton Info'].map((text) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                <MailIcon />
-              </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={listItem.text} />
             </ListItem>
           ))}
         </List>

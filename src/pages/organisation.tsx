@@ -18,7 +18,7 @@ const Info: NextPage = () => {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          Additional Info
+          Org Information
         </Typography>
       </Box>
     </Container>
