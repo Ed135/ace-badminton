@@ -26,11 +26,15 @@
     "notistack": "^2.0.3",
     "react": "latest",
     "react-dom": "latest",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
     "swr": "^1.1.1"
   },
   "devDependencies": {
     "@capacitor/cli": "^3.3.3",
     "@types/react": "latest",
+    "@types/react-swipeable-views": "^0.13.1",
+    "@types/react-swipeable-views-utils": "^0.13.3",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "typescript": "latest"

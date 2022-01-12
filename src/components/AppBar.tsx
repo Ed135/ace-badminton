@@ -15,10 +15,14 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
+import HomeIcon from '@mui/icons-material/Home';
+import PeopleIcon from '@mui/icons-material/People';
+import GroupsIcon from '@mui/icons-material/Groups';
+import HelpCenterIcon from '@mui/icons-material/HelpCenter';
+import SportsTennisIcon from '@mui/icons-material/SportsTennis';
 import Link from './Link';
 
-const drawerWidth = 360;
+const drawerWidth = 280;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
   open?: boolean;
@@ -70,10 +74,10 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 const appBarList = [
-  { link: '/', text: 'Home Page', icon: <InboxIcon /> },
-  { link: '/organisation', text: 'Badminton Organisation', icon: <InboxIcon /> },
-  { link: '/teams', text: 'Badminton Teams', icon: <InboxIcon /> },
-  { link: '/info', text: 'Information', icon: <InboxIcon /> }
+  { link: '/', text: 'Home Page', icon: <HomeIcon /> },
+  { link: '/organisation', text: 'Badminton Organisation', icon: <PeopleIcon /> },
+  { link: '/teams', text: 'Badminton Teams', icon: <GroupsIcon /> },
+  { link: '/info', text: 'Information', icon: <HelpCenterIcon /> }
 ]
 
 export default function AppBarLeft(props: { children: any; }) {
@@ -104,7 +108,7 @@ export default function AppBarLeft(props: { children: any; }) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" style={{ textDecoration: 'none' }}>
-            Bournemouth Ace Badminton Club
+            Bournemouth Ace Badminton Club <SportsTennisIcon />
           </Typography>
         </Toolbar>
       </AppBar>
