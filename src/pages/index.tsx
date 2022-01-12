@@ -83,7 +83,7 @@ const Home: NextPage = () => {
         <Grid container direction="row" justifyContent="center" alignItems="center">
           {[1, 2, 3].map(card => {
             return (
-              <Grid key={card} item xs={12} md={3} style={{ margin: '0 12px' }}>
+              <Grid key={card} item xs={12} md={3} style={{ margin: '12px 12px' }}>
                 <BasicCard />
               </Grid>
             )
