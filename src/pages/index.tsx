@@ -9,7 +9,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import { Divider } from '@mui/material';
-import SwipeableTextMobileStepper from '../components/Carousel';
+// import SwipeableTextMobileStepper from '../components/Carousel';
 
 const bull = (
   <Box
@@ -66,9 +66,9 @@ const Home: NextPage = () => {
         <Typography component="p" textAlign="center" gutterBottom>
           Bournemouth run badminton club. We play casually on Wednesdays, for all levels, Beginner through to Expert!
         </Typography>
-        <Box sx={{ margin: '20px -100px 0 -100px', display: { xs: 'none', sm: 'block' } }}>
+        {/* <Box sx={{ margin: '20px -100px 0 -100px', display: { xs: 'none', sm: 'block' } }}>
           <SwipeableTextMobileStepper />
-        </Box>
+        </Box> */}
         <Paper sx={{ padding: 3, margin: 2 }}>
           <Typography component="p" textAlign="center" gutterBottom>
             Bournemouth run badminton club. We play casually on Wednesdays, for all levels, Beginner through to Expert!
