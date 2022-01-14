@@ -10,15 +10,15 @@ const Info: NextPage = () => {
       <Box
         sx={{
           my: 4,
-          marginTop: 5,
+          marginTop: 1,
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" component="h1" gutterBottom>
-          Additional Info
+        <Typography variant="h3" component="h3" textAlign="center" gutterBottom>
+          Additional Information
         </Typography>
       </Box>
     </Container>

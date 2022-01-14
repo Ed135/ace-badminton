@@ -88,7 +88,7 @@ const Home: NextPage = () => {
               </Grid>
             )
           })}
-        </Grid>        
+        </Grid>     
       </Box>
     </Container>
   );
