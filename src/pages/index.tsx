@@ -3,13 +3,11 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import { Divider } from '@mui/material';
-// import SwipeableTextMobileStepper from '../components/Carousel';
 
 const bull = (
   <Box
@@ -52,23 +50,17 @@ const Home: NextPage = () => {
       <Box
         sx={{
           my: 4,
-          marginTop: 1,
+          marginTop: 2,
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        <Typography variant="h3" component="h3" textAlign="center" gutterBottom>
-          ACE Badminton
-        </Typography>
+        {/* This Box with sx is allowing for a change in image size based on screen size given 60% is too small for mobile */}
+        <Box component="img" alt="ACE Badminton Club" sx={{ display: { xs: 'none', sm: 'flex' }, width: '60%'}} src="/AceLogoWhite.svg" />
+        <Box component="img" alt="ACE Badminton Club" sx={{ display: { xs: 'flex', sm: 'none' }, width: '100%'}} src="/AceLogoWhite.svg" />
         <Divider />
-        <Typography component="p" textAlign="center" gutterBottom>
-          Bournemouth run badminton club. We play casually on Wednesdays, for all levels, Beginner through to Expert!
-        </Typography>
-        {/* <Box sx={{ margin: '20px -100px 0 -100px', display: { xs: 'none', sm: 'block' } }}>
-          <SwipeableTextMobileStepper />
-        </Box> */}
         <Paper sx={{ padding: 3, margin: 2 }}>
           <Typography component="p" textAlign="center" gutterBottom>
             Bournemouth run badminton club. We play casually on Wednesdays, for all levels, Beginner through to Expert!
@@ -79,16 +71,7 @@ const Home: NextPage = () => {
           <Typography component="p" textAlign="center" gutterBottom>
             Turning up on the night - <b>£5.50</b> - Memebership <b>£42</b> per quarter <i>(Jan - March, ...)</i>
           </Typography>
-        </Paper>
-        <Grid container direction="row" justifyContent="center" alignItems="center">
-          {[1, 2, 3].map(card => {
-            return (
-              <Grid key={card} item xs={12} md={3} style={{ margin: '12px 12px' }}>
-                <BasicCard />
-              </Grid>
-            )
-          })}
-        </Grid>     
+        </Paper> 
       </Box>
     </Container>
   );

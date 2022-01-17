@@ -4,9 +4,7 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
-import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -15,11 +13,11 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import Fab from '@mui/material/Fab';
 import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
 import GroupsIcon from '@mui/icons-material/Groups';
 import HelpCenterIcon from '@mui/icons-material/HelpCenter';
-import SportsTennisIcon from '@mui/icons-material/SportsTennis';
 import Link from './Link';
 
 const drawerWidth = 280;
@@ -96,22 +94,9 @@ export default function AppBarLeft(props: { children: any; }) {
   return (
     <Box sx={{ display: { xs: 'none', sm: 'flex' }}}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{ mr: 2, ...(open && { display: 'none' }) }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" style={{ textDecoration: 'none' }}>
-            Bournemouth Ace Badminton Club <SportsTennisIcon />
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Fab color="primary" aria-label="add" onClick={open ? handleDrawerClose : handleDrawerOpen} style={{ position: "absolute", top: 32, left: 32 }}>
+        <MenuIcon />
+      </Fab>
       <Drawer
         sx={{
           width: drawerWidth,
