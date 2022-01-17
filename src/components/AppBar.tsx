@@ -18,6 +18,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
 import GroupsIcon from '@mui/icons-material/Groups';
 import HelpCenterIcon from '@mui/icons-material/HelpCenter';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import Link from './Link';
 
 const drawerWidth = 280;
@@ -72,10 +73,10 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 const appBarList = [
-  { link: '/', text: 'Home Page', icon: <HomeIcon /> },
-  { link: '/organisation', text: 'Badminton Organisation', icon: <PeopleIcon /> },
-  { link: '/teams', text: 'Badminton Teams', icon: <GroupsIcon /> },
-  { link: '/info', text: 'Information', icon: <HelpCenterIcon /> }
+  { link: '/', text: 'Home Page', icon: <HomeIcon />, disabled: false },
+  { link: '/organisation', text: 'Badminton Organisation', icon: <PeopleIcon />, disabled: false },
+  { link: '/teams', text: 'Badminton Teams', icon: <GroupsIcon />, disabled: true },
+  { link: '/info', text: 'Information', icon: <HelpCenterIcon />, disabled: false }
 ]
 
 export default function AppBarLeft(props: { children: any; }) {
@@ -118,13 +119,22 @@ export default function AppBarLeft(props: { children: any; }) {
         <Divider />
         <List>
           {appBarList.map((listItem) => (
-            <ListItem button key={listItem.text} component={Link} href={listItem.link}>
+            <ListItem button key={listItem.text} component={Link} href={listItem.link} disabled={listItem.disabled}>
               <ListItemIcon>
                 {listItem.icon}
               </ListItemIcon>
               <ListItemText primary={listItem.text} />
             </ListItem>
           ))}
+        </List>
+        <Divider />
+        <List>
+          <ListItem button disabled>
+            <ListItemIcon>
+              <AdminPanelSettingsIcon />
+            </ListItemIcon>
+            <ListItemText primary={<i>Admin</i>} />
+          </ListItem>
         </List>
       </Drawer>
       <Main open={open}>

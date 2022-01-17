@@ -23,4 +23,7 @@ The example folder provides adapters for usage with MUI.
 More information [in the documentation](https://mui.com/guides/routing/#next-js).
 
 ## Look into for auth
-https://supabase.com/docs/guides/auth b
+https://supabase.com/docs/guides/auth
+
+## GDPR for holding club information
+https://www.wrighthassall.co.uk/knowledge-base/guide-to-the-gdpr-for-sports-clubs
