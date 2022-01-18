@@ -27,3 +27,11 @@ https://supabase.com/docs/guides/auth
 
 ## GDPR for holding club information
 https://www.wrighthassall.co.uk/knowledge-base/guide-to-the-gdpr-for-sports-clubs
+
+
+
+Template
+
+Not harewood
+Ace badminton
+Dorset Ace Badminton Club

@@ -9,6 +9,7 @@ import theme from '../styles/theme';
 import createEmotionCache from '../utils/createEmotionCache';
 import AppBarLeft from '../components/AppBar';
 import FixedBottomNavigation from '../components/MobileAppBar';
+import Script from 'next/script';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -43,6 +44,11 @@ export default function MyApp(props: MyAppProps) {
           </FixedBottomNavigation>
         </ThemeProvider>
       </SnackbarProvider>
+      <Script id="mcjs" dangerouslySetInnerHTML={{
+        __html: `
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2b5fdcf11190eeee064e7dd5a/ab5e31cda703000daa4fa2442.js");
+        `,
+      }} />
     </CacheProvider>
   );
 }
