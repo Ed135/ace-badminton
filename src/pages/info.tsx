@@ -18,31 +18,18 @@ const Info: NextPage = () => {
           alignItems: 'center',
         }}
       >
+      {/* This Box with sx is allowing for a change in image size based on screen size given 60% is too small for mobile */}
+      <Box component="img" alt="Ace Badminton Club" sx={{ display: { xs: 'none', sm: 'flex' }, width: '60%'}} src="/AceLogoWhite.svg" />
+      <Box component="img" alt="Ace Badminton Club" sx={{ display: { xs: 'flex', sm: 'none' }, width: '100%'}} src="/AceLogoWhite.svg" />
         <Typography variant="h3" component="h3" textAlign="center" gutterBottom>
-          Additional Info
+          Information
         </Typography>
         <Paper sx={{ padding: 3, margin: 3 }}>
           <Typography component="p" textAlign="center" gutterBottom>
             <b>Contact Details</b>
           </Typography>
           <Typography component="p" textAlign="center" gutterBottom>
-            Ace Badminton Email: <b><a href="mailto:someone@yoursite.com" target="_blank" rel="noreferrer">acebadminton@dummy.com</a></b> 
-          </Typography>
-        </Paper>
-        <Paper sx={{ padding: 3, margin: 3 }}>
-          <Typography component="p" textAlign="center" gutterBottom>
-            <b>Where we play?</b>
-          </Typography>
-          <Typography component="p" textAlign="center" gutterBottom>
-            Roys Moore Sports Hall<br />Bournemouth BH7 6NY 
-          </Typography>
-        </Paper>
-        <Paper sx={{ padding: 3, margin: 3 }}>
-          <Typography component="p" textAlign="center" gutterBottom>
-            <b>Payment Details</b>
-          </Typography>
-          <Typography component="p" textAlign="center" gutterBottom>
-            <b>Sort Code</b>: 12 34 56<br /><b>Account Number</b>: 12345678 
+            Ace Badminton Club email: <b><a href="mailto:ace.dorset@gmail.com" target="_blank" rel="noreferrer">ace.dorset@gmail.com</a></b>
           </Typography>
         </Paper>
       </Box>

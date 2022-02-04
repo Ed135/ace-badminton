@@ -21,7 +21,7 @@ export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
     <CacheProvider value={emotionCache}>
-      <SnackbarProvider 
+      <SnackbarProvider
         maxSnack={1}
         anchorOrigin={{
           vertical: 'top',
@@ -29,7 +29,7 @@ export default function MyApp(props: MyAppProps) {
         }}
       >
         <Head>
-          <title>ACE Badminton</title>
+          <title>Ace Badminton Dorset</title>
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <ThemeProvider theme={theme}>

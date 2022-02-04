@@ -74,8 +74,8 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 const appBarList = [
   { link: '/', text: 'Home', icon: <HomeIcon />, disabled: false },
-  { link: '/organisation', text: 'Badminton Organisation', icon: <PeopleIcon />, disabled: true },
-  { link: '/teams', text: 'Badminton Teams', icon: <GroupsIcon />, disabled: true },
+  { link: '/block', text: 'Block Booking', icon: <PeopleIcon />, disabled: false },
+//   { link: '/teams', text: 'Badminton Teams', icon: <GroupsIcon />, disabled: true },
   { link: '/info', text: 'Information', icon: <HelpCenterIcon />, disabled: false }
 ]
 
