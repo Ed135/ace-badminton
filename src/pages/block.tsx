@@ -88,7 +88,7 @@ const Info: NextPage = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Yes - ensure you have signed up to our <Button variant="text"><a href="http://eepurl.com/hSuZbn">Mailing List</a></Button> and we will email
+                Yes - ensure you have signed up to our <Button variant="text" href="http://eepurl.com/hSuZbn">Mailing List</Button> and we will email
                 about two weeks before the new block starts.
               </Typography>
             </AccordionDetails>
@@ -114,11 +114,11 @@ const Info: NextPage = () => {
               aria-controls="panel3a-content"
               id="panel3a-header"
             >
-              <Typography>I want to pay for block booking but I know I'm going to be away for part of the quarter. Can I get a discount?</Typography>
+              <Typography>I want to pay for block booking but I know I&apos;m going to be away for part of the quarter. Can I get a discount?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Unfortunately we do not offer discounts on our block booking fee. If you know that you won't be able to attend some sessions, we recommend
+                Unfortunately we do not offer discounts on our block booking fee. If you know that you won&apos;t be able to attend some sessions, we recommend
                 that you calculate whether paying the ad-hoc fee of £6 per week will be cheaper for you.
               </Typography>
             </AccordionDetails>
@@ -129,12 +129,12 @@ const Info: NextPage = () => {
               aria-controls="panel4a-content"
               id="panel4a-header"
             >
-              <Typography>I'm new to the club and I'd like to join as a block booking member but it is currently part of the way through a quarter.
+              <Typography>I&apos;m new to the club and I&apos;d like to join as a block booking member but it is currently part of the way through a quarter.
               Can I still join?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Yes - if you are a new member to the club then we recommend you pay the ad-hoc fee of £6 on your first session. If you'd still like to join the
+                Yes - if you are a new member to the club then we recommend you pay the ad-hoc fee of £6 on your first session. If you&apos;d still like to join the
                 block booking membership after this then we will charge you the block booking fee for the remaining weeks.
               </Typography>
             </AccordionDetails>
@@ -145,7 +145,7 @@ const Info: NextPage = () => {
               aria-controls="panel4a-content"
               id="panel4a-header"
             >
-              <Typography>I've paid my block booking fee but I now cannot play due to unforeseen circumstances. Can I get a refund?</Typography>
+              <Typography>I&apos;ve paid my block booking fee but I now cannot play due to unforeseen circumstances. Can I get a refund?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>

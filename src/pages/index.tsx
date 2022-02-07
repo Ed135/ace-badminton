@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { Divider } from '@mui/material';
+import Link from '@mui/material/Link';
 
 const Home: NextPage = () => {
   return (
@@ -44,8 +45,8 @@ const Home: NextPage = () => {
           How To Hear From Us
         </Typography>
           <Typography component="p" textAlign="center" gutterBottom>
-            Sign up to our <Button variant="text"><a href="http://eepurl.com/hSuZbn">Mailing List</a></Button> to ensure
-            you don't miss out on our updates, membership options and events!
+            Sign up to our <Button variant="text" href="http://eepurl.com/hSuZbn">Mailing List</Button> to ensure
+            you don&apos;t miss out on our updates, membership options and events!
           </Typography>
         </Paper>
         <Paper sx={{ padding: 3, margin: 3, bgcolor: '#DAECDD', width: '100%' }}>
@@ -60,8 +61,8 @@ const Home: NextPage = () => {
           </Typography>
           <Typography component="p" textAlign="center" gutterBottom>
             <b>Block Booking</b> membership is a quarterly payment model, where you pay at a discounted rate of £3.50 per session for 3 months of sessions up-front.
-            This up-front cost will be calculated each quarter, and is usually <b>£45.50</b> which covers 13 weeks of sessions. See our <a href="/block">Block Booking</a> page
-            for more information.
+            This up-front cost will be calculated each quarter, and is usually <b>£45.50</b> which covers 13 weeks of sessions.
+             See our <Link href="/block"><a>Block Booking</a></Link> page for more information.
           </Typography>
         </Paper>
       </Box>
