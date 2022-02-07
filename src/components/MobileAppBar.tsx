@@ -4,7 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeIcon from '@mui/icons-material/Home';
-// import PeopleIcon from '@mui/icons-material/People';
+import PeopleIcon from '@mui/icons-material/People';
 // import GroupsIcon from '@mui/icons-material/Groups';
 import HelpCenterIcon from '@mui/icons-material/HelpCenter';
 import Paper from '@mui/material/Paper';
@@ -28,7 +28,7 @@ export default function FixedBottomNavigation(props: { children: any}) {
           }}
         >
           <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link} href="/" />
-          {/* <BottomNavigationAction label="Org" icon={<PeopleIcon />} component={Link} href="/organisation" /> */}
+          <BottomNavigationAction label="Block Booking" icon={<PeopleIcon />} component={Link} href="/block" />
           {/* <BottomNavigationAction label="Teams" icon={<GroupsIcon />} component={Link} href="/teams" /> */}
           <BottomNavigationAction label="Info" icon={<HelpCenterIcon />} component={Link} href="/info" />
         </BottomNavigation>
