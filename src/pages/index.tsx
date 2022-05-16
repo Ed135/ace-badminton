@@ -1,5 +1,8 @@
 import type { NextPage } from 'next';
 import Container from '@mui/material/Container';
+import NewsDialog from '../components/NewsDialog';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -24,12 +27,14 @@ const Home: NextPage = () => {
         <Box component="img" alt="Ace Badminton Club" sx={{ display: { xs: 'none', sm: 'flex' }, width: '60%'}} src="/AceLogoWhite.svg" />
         <Box component="img" alt="Ace Badminton Club" sx={{ display: { xs: 'flex', sm: 'none' }, width: '100%'}} src="/AceLogoWhite.svg" />
         <Divider />
+        <NewsDialog>
+        </NewsDialog>
         <Paper sx={{ padding: 3, margin: 3, bgcolor: '#DAECDD', width: '100%' }}>
           <Typography variant="h5" textAlign="center" gutterBottom>
           About Us
           </Typography>
           <Typography component="p" textAlign="center" gutterBottom>
-            We are a Bournemouth-based badminton club who play casually on Wednesdays for all levels, beginner through to expert!
+            We are a Bournemouth-based badminton club for adults who play casually on Wednesdays for all levels, beginner through to expert!
           </Typography>
         </Paper>
         <Paper sx={{ padding: 3, margin: 3, bgcolor: '#DAECDD', width: '100%' }}>
@@ -54,7 +59,7 @@ const Home: NextPage = () => {
             How To Join
           </Typography>
           <Typography component="p" textAlign="center" gutterBottom>
-            Show up on a Wednesday evening! We offer two membership options; ad hoc and block booking.
+            Please drop us an <b><a href="mailto:ace.dorset@gmail.com" target="_blank" rel="noreferrer">email</a></b> if you are interested in attending our club nights. We offer two membership options; ad hoc and block booking.
           </Typography>
           <Typography component="p" textAlign="center" gutterBottom>
             <b>Ad Hoc</b> membership is a pay-as-you-go model. We charge <b>£6.00</b> per session, with payment taken at club night via bank transfer or card.
@@ -64,6 +69,9 @@ const Home: NextPage = () => {
             This up-front cost will be calculated each quarter, and is usually <b>£45.50</b> which covers 13 weeks of sessions.
              See our <Link href="/block"><a>Block Booking</a></Link> page for more information.
           </Typography>
+          <Typography component="p" textAlign="center" gutterBottom>
+            <b>Junior Membership</b> - if you are under 18 and are interested in our Ace Juniors Badminton Club (not yet started) then please <b><a href="mailto:ace.dorset@gmail.com" target="_blank" rel="noreferrer">email us</a></b>
+           </Typography>
         </Paper>
       </Box>
     </Container>
